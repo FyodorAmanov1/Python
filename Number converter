@@ -1,0 +1,26 @@
+list16 = []
+d = int(input("Enter a decimal number "))
+print(d%16)
+
+while d > 16:
+    ph = 0
+    nh = d%16
+    if nh == 10:
+        ph = 'A'
+    if nh == 11:
+        ph = 'B'
+    if nh == 12:
+        ph = 'C'
+    if nh == 13:
+        ph = 'D'
+    if nh == 14:
+        ph = 'E'
+    if nh == 15:
+        ph = 'F'
+    else:
+        ph = nh
+    list16.append(ph)
+    d -= nh*16
+
+list16.reverse()
+print(*list16)
