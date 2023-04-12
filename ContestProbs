@@ -1,0 +1,12 @@
+n = int(input())
+i = 0
+c = 1
+while c == 1:
+    i+= 1
+    ni = n + i
+    s = str(ni)
+    if s[0] != s[1] and s[0] != s[2] and s[0] != s[3] and s[1] != s[2] and s[1] != s[3] and s[2] != s[3]:
+        print(n+i)
+        c += 1
+    else:
+        continue
